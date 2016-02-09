@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mcc.currency"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <meta-data android:value="true" android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Input"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.mcc.currency.INPUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.google.ads.AdActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+    
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Output"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.mcc.currency.OUTPUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Help"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.mcc.currency.HELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".About"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.mcc.currency.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundinput"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Some of your users will run into questions or problems along the way. They&apos;ll be looking for answers within your app, and if they don&apos;t find them quickly, they may leave and never come back."
+        android:textColor="#705C5F"
+        android:textSize="25dp" />
+    	
+
+</RelativeLayout>

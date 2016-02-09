@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundinput"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titilebartop"
+        android:gravity="right" >
+
+        <ImageView
+            android:id="@+id/imgMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/menubutton" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgCurPriceBuyOrSell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/currentpricebuy" />
+
+    <TextView
+        android:id="@+id/txtBDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgCurPriceBuyOrSell"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imgCurPriceBuyOrSell"
+        android:text="BDT"
+        android:textColor="#705C5F"
+        android:textSize="18dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/txtMarketPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgCurPriceBuyOrSell"
+        android:layout_below="@+id/imgCurPriceBuyOrSell"
+        android:layout_marginTop="14dp"
+        android:text="Current Market Price"
+        android:textColor="#705C5F"
+        android:textSize="25dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtMarketPrice"
+        android:layout_marginTop="17dp"
+        android:background="#1A0F11" />
+
+    <TextView
+        android:id="@+id/txtAskedCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtMarketPrice"
+        android:layout_below="@+id/view2"
+        android:text="Asked Currency"
+        android:textColor="#705C5F"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/txtCurrentPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAskedCurrency"
+        android:layout_below="@+id/txtAskedCurrency"
+        android:layout_marginTop="18dp"
+        android:text="Current Price"
+        android:textColor="#705C5F"
+        android:textSize="25dp" />
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/txtCurrentPrice"
+        android:background="#1A0F11" />
+
+    <RelativeLayout
+        android:id="@+id/popUpMenuLayout"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#4B292C"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/inputback"
+            android:text="About" />
+
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnAbout"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/inputback"
+            android:text="Help" />
+
+    </RelativeLayout>
+    
+    <com.google.ads.AdView 
+         xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+         android:id="@+id/adView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         ads:adUnitId="a152a5677605d78"
+         ads:adSize="BANNER"
+         android:layout_alignParentBottom="true"
+         ads:loadAdOnCreate="true"/>
+
+</RelativeLayout>
